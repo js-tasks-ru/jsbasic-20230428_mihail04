@@ -10,10 +10,14 @@ function print(text) {
  * чтобы функция sayHello работала корректно
  */
 function isValid(name) {
-  if (!name.includes(' ') && name.length >= 4 && name != null) {
+  if (name != null){
+    if(!name.includes(' ') && name.length >= 4) {
     return true;
   } else {
     return false;}
+  } else {
+    return false;
+  }
 }
 
 function sayHello() {
@@ -25,3 +29,4 @@ function sayHello() {
     print('Некорректное имя');
   }
 }
+
