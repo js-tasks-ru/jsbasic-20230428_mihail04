@@ -1,3 +1,9 @@
 function checkSpam(str) {
-  // ваш код...
+  let newStr = str. toLowerCase(); 
+
+  if (newStr.indexOf('1xbet')>=0 || newStr.indexOf('xxx')>=0){
+    return false;
+  } else {
+    return true;
+  }
 }
