@@ -1,3 +1,8 @@
 function isEmpty(obj) {
-  // ваш код...
+  if (Object.keys(obj).length) {
+    return false;
+  } else {
+    return true;
+  }
 }
+
